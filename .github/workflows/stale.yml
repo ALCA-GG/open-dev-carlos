@@ -1,0 +1,34 @@
+name: Issues y Pull Requests inactivos
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/stale@v9
+        with:
+          days-before-issue-stale: 60
+          days-before-pr-stale: 30
+          days-before-close: 14
+          stale-issue-label: needs-review
+          stale-pr-label: needs-review
+          exempt-issue-labels: accepted,in-progress,blocked,good first issue,help wanted
+          exempt-pr-labels: accepted,in-progress,blocked,good first issue,help wanted
+          stale-issue-message: |
+            Este issue lleva 60 días sin actividad. Si sigue siendo relevante, deja un comentario
+            con una actualización. Se cerrará automáticamente en 14 días si no hay respuesta.
+          stale-pr-message: |
+            Este Pull Request lleva 30 días sin actividad. Si quieres continuar, deja un comentario
+            o actualiza la rama. Se cerrará automáticamente en 14 días si no hay respuesta.
+          close-issue-message: |
+            Cerramos este issue por inactividad. Puedes reabrirlo si vuelve a ser relevante.
+          close-pr-message: |
+            Cerramos este Pull Request por inactividad. Puedes reabrirlo cuando quieras retomarlo.

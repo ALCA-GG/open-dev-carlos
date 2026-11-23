@@ -1,0 +1,37 @@
+name: Mejora de documentación
+description: Propón una corrección o mejora en la documentación de OpenDev.
+title: "[Docs]: "
+labels: ["documentation", "needs-review"]
+body:
+  - type: input
+    id: document
+    attributes:
+      label: Documento afectado
+      description: Ruta o enlace al documento.
+      placeholder: docs/getting-started/java-setup.md
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema identificado
+      description: ¿Qué parte es incorrecta, confusa o está incompleta?
+    validations:
+      required: true
+
+  - type: textarea
+    id: improvement
+    attributes:
+      label: Mejora sugerida
+      description: Describe el cambio que propones.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Motivo del cambio
+      description: ¿Cómo ayuda esta mejora a quienes aprenden?
+    validations:
+      required: true

@@ -1,0 +1,38 @@
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+release.properties
+
+# Java
+*.class
+*.log
+hs_err_pid*
+
+# Node.js
+node_modules/
+npm-debug.log*
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.classpath
+.project
+.factorypath
+
+# Sistemas operativos
+.DS_Store
+Thumbs.db
+
+# Entorno local
+.env
+.env.*
+!.env.example
+
+# Herramientas locales
+.cache/

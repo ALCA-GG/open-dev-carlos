@@ -1,0 +1,176 @@
+# OpenDev
+
+**Comunidad educativa de código abierto para aprender Java desde cero.**
+
+OpenDev es un repositorio colaborativo donde estudiantes y personas que empiezan en la programación aprenden Java practicando, leyendo documentación clara y contribuyendo a un proyecto real. No es una colección de ejercicios sueltos: es una comunidad de aprendizaje con reglas de contribución, revisión de código y una ruta progresiva.
+
+> Sustituye `OWNER` por el usuario u organización de GitHub que mantiene el repositorio.
+
+## Misión
+
+Hacer que el desarrollo de software sea más accesible mediante un entorno de aprendizaje estructurado, colaborativo y abierto.
+
+## Visión
+
+Construir una comunidad donde las personas principiantes desarrollen habilidades de programación de forma progresiva, colaboren en proyectos de código abierto y se familiaricen con prácticas profesionales de desarrollo.
+
+## Objetivos
+
+- Enseñar Java desde cero, sin asumir experiencia previa.
+- Practicar con ejercicios y proyectos pequeños y verificables.
+- Aprender Git, GitHub y el flujo de Pull Requests.
+- Fomentar el código limpio y las convenciones compartidas.
+- Ofrecer revisiones de código constructivas.
+- Mantener todo el material educativo accesible y abierto.
+
+## ¿Quién puede participar?
+
+Cualquier persona interesada en aprender o enseñar programación. No se requiere experiencia profesional. Puedes participar como:
+
+- **Learner:** usas el material para aprender, aunque no contribuyas con código.
+- **Contributor:** abres issues, mejoras documentación, propones ejercicios o envías Pull Requests.
+- **Maintainer:** revisas contribuciones y ayudas a mantener el repositorio, cuando el Owner lo autorice.
+
+## ¿Qué puedes aprender?
+
+- Fundamentos de Java y de la programación.
+- Tipos de datos, operadores, control de flujo, bucles y métodos.
+- Arrays, cadenas, programación orientada a objetos, excepciones y colecciones.
+- Pruebas automatizadas con JUnit 5.
+- Git, GitHub, ramas, commits y Pull Requests.
+- Revisión de código y trabajo colaborativo.
+- Convenciones de estilo y buenas prácticas.
+
+## Ruta de aprendizaje
+
+| Módulo | Tema                                    |
+| ------ | --------------------------------------- |
+| 00     | Introducción a la programación y a Java |
+| 01     | Fundamentos de Java                     |
+| 02     | Variables y tipos                       |
+| 03     | Operadores                              |
+| 04     | Control de flujo                        |
+| 05     | Bucles                                  |
+| 06     | Métodos                                 |
+| 07     | Arrays y cadenas                        |
+| 08     | Programación orientada a objetos        |
+| 09     | Excepciones                             |
+| 10     | Colecciones                             |
+| 11     | Proyectos básicos                       |
+
+Consulta [`docs/learning-path/README.md`](docs/learning-path/README.md) para ver el orden recomendado y los objetivos de cada módulo.
+
+## Estructura del repositorio
+
+```text
+OpenDev/
+├── .github/            Plantillas, workflows y configuración de GitHub
+├── .husky/             Git hooks locales
+├── .mvn/               Configuración del Maven Wrapper
+├── docs/               Guías, ruta de aprendizaje y gobernanza
+├── exercises/          Ejercicios organizados por nivel
+├── projects/           Proyectos prácticos por dificultad
+├── resources/          Libros, documentación y enlaces útiles
+├── scripts/            Validaciones de estructura y commits
+├── solutions/          Soluciones explicadas, separadas de los enunciados
+└── src/                Aplicación Java de ejemplo y sus tests
+```
+
+Cada directorio incluye un README con su propósito. Los ejercicios viven en `exercises/`, las soluciones en `solutions/` y la aplicación Java en `src/`.
+
+## Requisitos
+
+- Java 21 LTS.
+- Git.
+- Node.js LTS (incluido en `.nvmrc`).
+- Una cuenta de GitHub para contribuir.
+- Terminal básica.
+
+No necesitas Maven instalado: el repositorio incluye el Maven Wrapper (`mvnw`).
+
+## Primeros pasos
+
+1. Lee [`docs/getting-started/installation.md`](docs/getting-started/installation.md).
+2. Configura Java con [`docs/getting-started/java-setup.md`](docs/getting-started/java-setup.md).
+3. Configura Git con [`docs/getting-started/git-setup.md`](docs/getting-started/git-setup.md).
+4. Configura GitHub con [`docs/getting-started/github-setup.md`](docs/getting-started/github-setup.md).
+5. Clona el repositorio y ejecuta:
+
+```bash
+npm install
+./mvnw clean verify
+```
+
+6. Empieza por [`docs/learning-path/00-introduction.md`](docs/learning-path/00-introduction.md) y resuelve el primer ejercicio en [`exercises/01-fundamentals/01-hello-world`](exercises/01-fundamentals/01-hello-world).
+
+## Comandos disponibles
+
+| Comando                                  | Propósito                                     |
+| ---------------------------------------- | --------------------------------------------- |
+| `./mvnw clean verify`                    | Compila, ejecuta tests, Checkstyle y Spotless |
+| `./mvnw test`                            | Ejecuta solo los tests                        |
+| `./mvnw checkstyle:check`                | Ejecuta Checkstyle                            |
+| `./mvnw spotless:check`                  | Comprueba el formato Java                     |
+| `./mvnw spotless:apply`                  | Aplica el formato Java                        |
+| `npm run validate`                       | Valida estructura y formato de Markdown/JSON  |
+| `npm run validate:structure`             | Valida la estructura del repositorio          |
+| `npm run validate:commit -- "feat: ..."` | Valida un mensaje de commit                   |
+| `npm run format:write`                   | Formatea Markdown y JSON con Prettier         |
+
+## Flujo de contribución
+
+1. Busca o abre un issue.
+2. Haz fork del repositorio y clona tu fork.
+3. Crea una rama desde `main` con el prefijo adecuado.
+4. Realiza el cambio y añade tests cuando corresponda.
+5. Ejecuta `npm run validate` y `./mvnw clean verify`.
+6. Haz commits con Conventional Commits.
+7. Abre un Pull Request y responde a la revisión.
+
+La guía completa está en [`CONTRIBUTING.md`](CONTRIBUTING.md).
+
+## Modelo de ramas
+
+OpenDev usa un GitHub Flow simplificado:
+
+- `main` es la única rama permanente y siempre debe estar estable.
+- Los cambios entran mediante Pull Requests.
+- Las ramas de trabajo se crean desde `main` y usan prefijos como `feat/`, `fix/`, `docs/`, `refactor/`, `test/`, `chore/` o `hotfix/`.
+- El método de merge preferido es **squash and merge**.
+
+No existe una rama `develop`.
+
+## Convención de commits
+
+Formato: `<tipo>(<alcance>): <descripción>`
+
+```text
+feat(exercises): add variable exercises
+fix(fundamentals): correct integer division example
+docs(installation): improve Java setup guide
+```
+
+Tipos permitidos: `feat`, `fix`, `docs`, `test`, `refactor`, `style`, `chore`, `build`, `ci`, `perf` y `revert`. La descripción empieza en minúscula, no termina en punto y no supera 72 caracteres.
+
+## Pull Requests
+
+Todo Pull Request debe describir qué cambia y por qué, indicar cómo se probó, pasar CI y recibir la aprobación de un maintainer. Usa la plantilla incluida y revisa [`docs/guides/pull-requests.md`](docs/guides/pull-requests.md).
+
+## Comunidad
+
+- Sigue el [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md).
+- Consulta [`SUPPORT.md`](SUPPORT.md) para saber dónde pedir ayuda.
+- Reporta vulnerabilidades de forma privada según [`SECURITY.md`](SECURITY.md).
+- Las normas de convivencia y revisión están en [`docs/guides/code-review.md`](docs/guides/code-review.md).
+
+## Roadmap
+
+El plan por fases está en [`ROADMAP.md`](ROADMAP.md). El proyecto permanece en versión `0.x` hasta que la estructura educativa y el flujo de contribución sean estables.
+
+## Licencia
+
+OpenDev se distribuye bajo la licencia MIT. Consulta [`LICENSE`](LICENSE) y [`NOTICE`](NOTICE).
+
+## Mantenimiento
+
+Actualmente el repositorio es mantenido por el Owner del proyecto, que actúa como maintainer, technical lead y revisor principal. Los roles y el proceso de decisión se documentan en [`docs/governance/roles.md`](docs/governance/roles.md) y [`docs/governance/decision-making.md`](docs/governance/decision-making.md). La configuración pendiente de GitHub está en [`docs/governance/github-settings.md`](docs/governance/github-settings.md).

@@ -1,0 +1,9 @@
+# Sustituye OWNER por el propietario real del repositorio antes de publicar.
+blank_issues_enabled: false
+contact_links:
+  - name: Preguntas y ayuda
+    url: https://github.com/OWNER/OpenDev/discussions
+    about: Para dudas de programación, revisa primero SUPPORT.md y usa Discussions.
+  - name: Reportar una vulnerabilidad
+    url: https://github.com/OWNER/OpenDev/security/advisories/new
+    about: No publiques detalles de seguridad en issues públicos. Consulta SECURITY.md.

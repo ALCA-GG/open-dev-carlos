@@ -1,0 +1,61 @@
+name: Reporte de error
+description: Informa de un error en la documentación, un ejercicio o la configuración del repositorio.
+title: "[Bug]: "
+labels: ["bug", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por ayudar a mejorar OpenDev. Antes de abrir el reporte, revisa que no exista ya un issue similar.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Descripción
+      description: Explica brevemente qué ocurre.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamiento esperado
+      description: ¿Qué debería ocurrir?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Comportamiento actual
+      description: ¿Qué ocurre realmente? Incluye mensajes de error completos si los hay.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Pasos para reproducirlo
+      placeholder: |
+        1. Ejecuto...
+        2. Abro...
+        3. Veo...
+    validations:
+      required: true
+
+  - type: input
+    id: java-version
+    attributes:
+      label: Versión de Java
+      description: Salida de `java -version`.
+      placeholder: openjdk 21.0.x
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexto adicional
+      description: Sistema operativo, capturas, enlaces o cualquier detalle útil.
+    validations:
+      required: false

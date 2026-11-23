@@ -1,0 +1,76 @@
+# Política de contribución
+
+Esta política complementa [`CONTRIBUTING.md`](../../CONTRIBUTING.md) y define qué se acepta en el repositorio.
+
+## Qué se acepta
+
+- Correcciones de errores en documentación, ejercicios o configuración.
+- Mejoras de claridad para principiantes.
+- Ejercicios nuevos con objetivos de aprendizaje claros.
+- Tests que cubran comportamiento existente o nuevo.
+- Refactorizaciones pequeñas y justificadas.
+- Recursos externos de calidad.
+- Traducciones y correcciones de estilo.
+
+## Qué no se acepta
+
+- Contenido copiado sin atribución o con licencia incompatible.
+- Soluciones colocadas junto al enunciado cuando arruinan el ejercicio.
+- Dependencias innecesarias o sin mantenimiento.
+- Frameworks, bases de datos o servicios externos para los ejercicios básicos.
+- Cambios de alcance amplio mezclados con correcciones pequeñas.
+- Código ofuscado, generado sin revisión o sin explicación.
+- Publicidad, spam o enlaces afiliados.
+- Conducta irrespetuosa.
+
+## Calidad mínima
+
+Todo Pull Request debe:
+
+- Pasar CI.
+- Respetar el formato y las convenciones.
+- Incluir tests cuando cambie lógica.
+- Actualizar la documentación afectada.
+- Tener un título y una descripción claros.
+- No incluir secretos ni datos personales.
+- No introducir dependencias sin justificación.
+
+## Ejercicios
+
+Un ejercicio debe:
+
+- Tener un objetivo de aprendizaje.
+- Ser comprensible sin conocimientos no explicados.
+- Incluir entrada y salida esperadas.
+- Incluir criterios de aceptación.
+- Tener tests cuando sea práctico.
+- Evitar dependencias innecesarias.
+
+## Soluciones
+
+Las soluciones:
+
+- Viven en `solutions/`, separadas del enunciado.
+- Explican el razonamiento.
+- Siguen las mismas convenciones.
+- Se revisan antes de integrarse.
+- No sustituyen el enunciado.
+
+## Revisiones y merges
+
+- Un maintainer revisa cada Pull Request.
+- Se requiere al menos una aprobación.
+- El merge preferido es squash and merge.
+- El Owner puede rechazar cambios que no encajen con la misión educativa.
+
+## Licencia de las contribuciones
+
+Al contribuir, aceptas que tu aportación se distribuya bajo la licencia MIT del proyecto y que no incluyes material de terceros sin permiso.
+
+## Retirada de contenido
+
+El Owner puede retirar contenido si incumple esta política, la licencia o el Código de Conducta. Cuando sea posible, se explicará el motivo y se dará la oportunidad de corregirlo.
+
+## Contacto
+
+Para dudas sobre esta política, abre un issue o consulta [`SUPPORT.md`](../../SUPPORT.md).

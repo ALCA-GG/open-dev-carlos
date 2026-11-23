@@ -1,0 +1,12 @@
+#!/bin/sh
+if ! command -v java >/dev/null 2>&1; then
+    echo "Java no está instalado o no está en el PATH. Instala Java 21 antes de hacer push." >&2
+    exit 1
+fi
+
+if [ ! -x ./mvnw ]; then
+    echo "No se encontró ./mvnw. Ejecuta el Maven Wrapper desde la raíz del repositorio." >&2
+    exit 1
+fi
+
+./mvnw -B verify
