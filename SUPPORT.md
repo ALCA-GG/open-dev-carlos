@@ -6,8 +6,8 @@ OpenDev es un proyecto educativo mantenido por voluntarios. No hay un servicio d
 
 1. Lee la documentación de [`docs/`](docs/).
 2. Revisa los issues abiertos y cerrados.
-3. Comprueba que usas Java 21.
-4. Ejecuta `./mvnw clean verify` para descartar problemas de configuración.
+3. Comprueba que usas Java 25 y que `./mvnw --version` también muestra Java 25.
+4. Ejecuta `./mvnw clean verify` para descartar problemas de configuración. Si el error es de Maven, revisa [`docs/getting-started/maven.md`](docs/getting-started/maven.md).
 
 ## Dónde pedir ayuda
 
@@ -26,7 +26,7 @@ OpenDev es un proyecto educativo mantenido por voluntarios. No hay un servicio d
 - Qué esperabas que ocurriera.
 - Qué ocurrió realmente.
 - Mensajes de error completos.
-- Versión de Java (`java -version`) y sistema operativo.
+- Versión de Java (`java -version`), versión de Maven (`./mvnw --version`) y sistema operativo.
 
 ## Lo que no ofrecemos
 

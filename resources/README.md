@@ -13,7 +13,7 @@ Material complementario para seguir aprendiendo. Los enlaces externos pertenecen
 1. Prioriza la documentación oficial.
 2. Practica con los ejercicios del repositorio.
 3. Usa los libros como apoyo, no como sustituto de escribir código.
-4. Verifica que el recurso esté actualizado para Java 21.
+4. Verifica que el recurso esté actualizado para Java 25.
 
 ## Sugerir un recurso
 

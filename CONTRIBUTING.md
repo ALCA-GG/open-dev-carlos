@@ -8,10 +8,10 @@ Necesitas:
 
 - Git instalado.
 - Una cuenta de GitHub.
-- Java 21 LTS.
+- Java 25 LTS.
 - Ganas de aprender. No necesitas experiencia profesional.
 
-El proyecto usa únicamente Java, Maven Wrapper y Git.
+El proyecto usa únicamente Java, Maven Wrapper y Git. Si usas IntelliJ IDEA o Apache NetBeans, sigue [`docs/getting-started/ide-setup.md`](docs/getting-started/ide-setup.md).
 
 Si algo no funciona, consulta [`SUPPORT.md`](SUPPORT.md) antes de abrir un issue.
 
@@ -50,7 +50,7 @@ En GitHub, pulsa **Fork** en la página del repositorio. Se creará una copia en
 
 ```bash
 git clone https://github.com/USERNAME/open-dev.git
-cd OpenDev
+cd open-dev
 ```
 
 Sustituye `USERNAME` por tu usuario de GitHub.
@@ -110,7 +110,7 @@ Usa minúsculas y kebab-case. Los nombres deben ser cortos y descriptivos.
 
 ### Código Java
 
-- Usa Java 21.
+- Usa Java 25.
 - Respeta el formato de Spotless y las reglas de Checkstyle.
 - Documenta las clases y métodos públicos con Javadoc.
 - Añade tests con JUnit 5 cuando la lógica lo permita.

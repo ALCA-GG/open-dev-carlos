@@ -48,7 +48,7 @@ body:
     attributes:
       label: Versión de Java
       description: Salida de `java -version`.
-      placeholder: openjdk 21.0.x
+      placeholder: openjdk 25.0.x
     validations:
       required: true
 

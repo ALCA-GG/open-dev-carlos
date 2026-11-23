@@ -27,7 +27,7 @@ Java es un lenguaje de programación creado en 1995. Es conocido por:
 - Usarse en aplicaciones empresariales, Android, servidores y herramientas.
 - Ser un lenguaje orientado a objetos.
 
-OpenDev usa **Java 21 LTS**, una versión con soporte a largo plazo.
+OpenDev usa **Java 25 LTS**, una versión con soporte a largo plazo.
 
 ## ¿Cómo se ejecuta un programa Java?
 
@@ -47,7 +47,7 @@ Este diseño permite que el mismo bytecode funcione en distintos sistemas operat
 - **JRE:** JVM + bibliotecas para ejecutar aplicaciones.
 - **JDK:** JRE + herramientas para desarrollar, como `javac`.
 
-Para este curso necesitas el **JDK 21**.
+Para este curso necesitas el **JDK 25**.
 
 ## Tu primer programa
 

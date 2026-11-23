@@ -63,7 +63,7 @@ Cada alumno resuelve los ejercicios en su propio fork, dentro de `users/TU-USUAR
 ## Estructura del repositorio
 
 ```text
-OpenDev/
+open-dev/
 ├── .github/            Plantillas, workflows y configuración de GitHub
 ├── .mvn/               Configuración del Maven Wrapper
 ├── docs/               Guías, ruta de aprendizaje y gobernanza
@@ -77,28 +77,38 @@ Cada directorio incluye un README con su propósito. La aplicación Java vive en
 
 ## Requisitos
 
-- Java 21 LTS.
+- Java 25 LTS.
 - Git.
 - Una cuenta de GitHub para contribuir.
 - Terminal básica.
 
 No necesitas Maven instalado: el repositorio incluye el Maven Wrapper (`mvnw`).
 
+## Entorno recomendado
+
+- **JDK 25 LTS**, obligatorio.
+- **IntelliJ IDEA Community** o **Apache NetBeans**, recomendado.
+- **Maven Wrapper**, incluido en el repositorio.
+
+Consulta [`docs/getting-started/installation.md`](docs/getting-started/installation.md) para configurarlo todo paso a paso.
+
 ## Primeros pasos
 
 1. Lee [`docs/getting-started/installation.md`](docs/getting-started/installation.md).
-2. Configura Java con [`docs/getting-started/java-setup.md`](docs/getting-started/java-setup.md).
-3. Configura Git con [`docs/getting-started/git-setup.md`](docs/getting-started/git-setup.md).
-4. Configura GitHub con [`docs/getting-started/github-setup.md`](docs/getting-started/github-setup.md).
-5. Clona el repositorio y verifica el entorno:
+2. Instala el JDK 25 con [`docs/getting-started/java-setup.md`](docs/getting-started/java-setup.md).
+3. Comprueba el Maven Wrapper con [`docs/getting-started/maven.md`](docs/getting-started/maven.md).
+4. Configura tu IDE con [`docs/getting-started/ide-setup.md`](docs/getting-started/ide-setup.md).
+5. Configura Git con [`docs/getting-started/git-setup.md`](docs/getting-started/git-setup.md).
+6. Configura GitHub con [`docs/getting-started/github-setup.md`](docs/getting-started/github-setup.md).
+7. Clona el repositorio y verifica el entorno:
 
 ```bash
 git clone https://github.com/carlosgarcia-tech/open-dev.git
-cd OpenDev
+cd open-dev
 ./mvnw clean verify
 ```
 
-6. Empieza por [`docs/learning-path/00-introduction.md`](docs/learning-path/00-introduction.md).
+8. Empieza por [`docs/learning-path/00-introduction.md`](docs/learning-path/00-introduction.md).
 
 ## Comandos disponibles
 

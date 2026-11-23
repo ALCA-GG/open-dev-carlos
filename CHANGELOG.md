@@ -14,6 +14,8 @@ El formato sigue [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/) y e
 - Workflows de CI, validación de títulos de Pull Request y gestión de inactividad.
 - Plantillas de issues y Pull Request.
 - Documentación de gobernanza y seguridad.
+- Actualización del proyecto a Java 25 LTS.
+- Guías completas de JDK 25, Maven Wrapper e IDEs recomendados (IntelliJ IDEA y Apache NetBeans).
 
 ### Pendiente
 

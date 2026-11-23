@@ -30,7 +30,7 @@ Los módulos siguientes se añadirán cuando el alumnado haya completado esta et
 ## Requisitos
 
 - Haber completado [`../getting-started/installation.md`](../getting-started/installation.md).
-- Tener Java 21 y el Maven Wrapper funcionando.
+- Tener Java 25 y el Maven Wrapper funcionando.
 
 ## Filosofía
 

@@ -24,7 +24,7 @@ Ahora tienes una copia en `https://github.com/USERNAME/open-dev`.
 
 ```bash
 git clone https://github.com/USERNAME/open-dev.git
-cd OpenDev
+cd open-dev
 git remote add upstream https://github.com/carlosgarcia-tech/open-dev.git
 git remote -v
 ```
