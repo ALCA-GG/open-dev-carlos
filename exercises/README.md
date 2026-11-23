@@ -24,6 +24,26 @@ Cada ejercicio tendrá:
 - Modifica los ejemplos y observa qué ocurre.
 - Practica con la aplicación de ejemplo en `src/`.
 
+## Dónde haces los ejercicios
+
+No hagas tus ejercicios en el repositorio compartido. Cada alumno trabaja en su propio fork:
+
+1. Haz fork de OpenDev en GitHub.
+2. Clona tu fork:
+
+```bash
+git clone https://github.com/TU-USUARIO/open-dev.git
+```
+
+3. Crea una carpeta con tu usuario, por ejemplo `users/TU-USUARIO/`, y guarda ahí todos tus ejercicios.
+4. Haz commit y push a tu fork.
+
+Así el repositorio compartido no crece con el trabajo de todos y las soluciones no quedan a la vista del resto.
+
+Si quieres que un maintainer revise un ejercicio, abre un Pull Request desde tu fork hacia `main`. La revisión se hace en el PR y **no se mergea**: tu código se queda en tu fork.
+
+Si el repositorio es público, tu fork también lo es. Para que el ejercicio tenga valor, intenta resolverlo antes de mirar el fork de otra persona.
+
 ## Contribuir
 
 Si quieres proponer un ejercicio, abre un issue explicando el objetivo y espera confirmación antes de implementarlo. No añadas ejercicios ni soluciones por tu cuenta: el ritmo de publicación es parte del diseño educativo.

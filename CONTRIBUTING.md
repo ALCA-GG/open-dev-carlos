@@ -30,6 +30,16 @@ Los ejercicios se incorporarán de forma progresiva y coordinada. No añadas eje
 
 No hace falta escribir código para contribuir.
 
+## Ejercicios del alumnado
+
+El repositorio compartido contiene el currículo, no las soluciones de cada alumno. Tus ejercicios van en tu fork:
+
+- Crea una carpeta `users/TU-USUARIO/` en tu fork.
+- Guarda ahí todos tus ejercicios.
+- No abras un Pull Request con tus ejercicios para que se mergeen en `main`.
+
+Si quieres revisión, abre un Pull Request desde tu fork hacia `main`. El maintainer lo revisa y lo cierra sin mergear; el código sigue en tu fork. Esto evita que el repositorio crezca con el trabajo de todos y que las soluciones queden a la vista.
+
 ## Flujo de trabajo con fork
 
 ### 1. Haz fork
@@ -39,7 +49,7 @@ En GitHub, pulsa **Fork** en la página del repositorio. Se creará una copia en
 ### 2. Clona tu fork
 
 ```bash
-git clone https://github.com/USERNAME/OpenDev.git
+git clone https://github.com/USERNAME/open-dev.git
 cd OpenDev
 ```
 
@@ -48,11 +58,9 @@ Sustituye `USERNAME` por tu usuario de GitHub.
 ### 3. Configura el repositorio original como upstream
 
 ```bash
-git remote add upstream https://github.com/OWNER/OpenDev.git
+git remote add upstream https://github.com/carlosgarcia-tech/open-dev.git
 git remote -v
 ```
-
-Sustituye `OWNER` por el propietario del repositorio original.
 
 ### 4. Comprueba Java y Maven Wrapper
 
@@ -79,15 +87,15 @@ git checkout -b feat/my-first-change
 
 Prefijos permitidos:
 
-| Tipo | Prefijo | Ejemplo |
-| --- | --- | --- |
-| Nueva funcionalidad | `feat/` | `feat/improve-docs` |
-| Corrección | `fix/` | `fix/incorrect-loop-example` |
-| Documentación | `docs/` | `docs/java-installation` |
-| Refactorización | `refactor/` | `refactor/exercise-structure` |
-| Tests | `test/` | `test/array-validation` |
-| Mantenimiento | `chore/` | `chore/update-maven` |
-| Corrección urgente | `hotfix/` | `hotfix/critical-build-error` |
+| Tipo                | Prefijo     | Ejemplo                       |
+| ------------------- | ----------- | ----------------------------- |
+| Nueva funcionalidad | `feat/`     | `feat/improve-docs`           |
+| Corrección          | `fix/`      | `fix/incorrect-loop-example`  |
+| Documentación       | `docs/`     | `docs/java-installation`      |
+| Refactorización     | `refactor/` | `refactor/exercise-structure` |
+| Tests               | `test/`     | `test/array-validation`       |
+| Mantenimiento       | `chore/`    | `chore/update-maven`          |
+| Corrección urgente  | `hotfix/`   | `hotfix/critical-build-error` |
 
 Usa minúsculas y kebab-case. Los nombres deben ser cortos y descriptivos.
 

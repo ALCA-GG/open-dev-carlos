@@ -37,6 +37,8 @@ Todo Pull Request debe:
 
 Los ejercicios y proyectos se publicarán de forma progresiva, uno a uno. No se aceptan ejercicios ni soluciones no coordinados con el Owner, porque el ritmo de publicación es parte del diseño educativo.
 
+El trabajo del alumnado no se mergea en `main`: cada alumno resuelve los ejercicios en su fork, en `users/TU-USUARIO/`. Los Pull Requests de ejercicios se revisan y se cierran sin mergear.
+
 Cuando se abra una convocatoria, las propuestas deberán:
 
 - Tener un objetivo de aprendizaje claro.

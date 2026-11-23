@@ -17,7 +17,7 @@ Recursos gratuitos para practicar y resolver dudas.
 
 ## Comunidad
 
-- [GitHub Discussions de OpenDev](https://github.com/OWNER/OpenDev/discussions): preguntas y ayuda.
+- [GitHub Discussions de OpenDev](https://github.com/carlosgarcia-tech/open-dev/discussions): preguntas y ayuda.
 - [Stack Overflow en español](https://es.stackoverflow.com/): preguntas técnicas.
 - [r/learnjava](https://www.reddit.com/r/learnjava/): comunidad de aprendizaje.
 

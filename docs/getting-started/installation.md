@@ -4,11 +4,11 @@ Esta guía prepara tu equipo para trabajar con OpenDev. Si es la primera vez que
 
 ## 1. Requisitos
 
-| Herramienta | Versión | Obligatoria |
-| --- | --- | --- |
-| Java Development Kit (JDK) | 21 LTS | Sí |
-| Git | Reciente | Sí |
-| Cuenta de GitHub | — | Para contribuir |
+| Herramienta                | Versión  | Obligatoria     |
+| -------------------------- | -------- | --------------- |
+| Java Development Kit (JDK) | 21 LTS   | Sí              |
+| Git                        | Reciente | Sí              |
+| Cuenta de GitHub           | —        | Para contribuir |
 
 No necesitas instalar Maven: el repositorio incluye el Maven Wrapper (`mvnw`).
 
@@ -34,7 +34,7 @@ git --version
 ## 4. Clonar el repositorio
 
 ```bash
-git clone https://github.com/OWNER/OpenDev.git
+git clone https://github.com/carlosgarcia-tech/open-dev.git
 cd OpenDev
 ```
 

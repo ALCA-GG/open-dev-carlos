@@ -4,8 +4,6 @@
 
 OpenDev es un repositorio colaborativo donde estudiantes y personas que empiezan en la programación aprenden Java practicando, leyendo documentación clara y contribuyendo a un proyecto real. No es una colección de ejercicios sueltos: es una comunidad de aprendizaje con reglas de contribución, revisión de código y una ruta progresiva.
 
-> Sustituye `OWNER` por el usuario u organización de GitHub que mantiene el repositorio.
-
 ## Misión
 
 Hacer que el desarrollo de software sea más accesible mediante un entorno de aprendizaje estructurado, colaborativo y abierto.
@@ -45,20 +43,22 @@ Los temas más avanzados se incorporarán cuando el alumnado haya completado los
 
 ## Ruta de aprendizaje
 
-| Módulo | Tema |
-| --- | --- |
-| 00 | Introducción a la programación y a Java |
-| 01 | Fundamentos de Java |
-| 02 | Variables, tipos y entrada/salida |
-| 03 | Operadores |
-| 04 | Control de flujo |
-| 05 | Bucles |
-| 06 | Métodos |
-| 07 | Arrays y cadenas |
+| Módulo | Tema                                    |
+| ------ | --------------------------------------- |
+| 00     | Introducción a la programación y a Java |
+| 01     | Fundamentos de Java                     |
+| 02     | Variables, tipos y entrada/salida       |
+| 03     | Operadores                              |
+| 04     | Control de flujo                        |
+| 05     | Bucles                                  |
+| 06     | Métodos                                 |
+| 07     | Arrays y cadenas                        |
 
 Consulta [`docs/learning-path/README.md`](docs/learning-path/README.md) para ver el orden recomendado y los objetivos de cada módulo.
 
 Los ejercicios se publicarán uno a uno, a medida que avance el alumnado. Esta versión inicial no incluye ejercicios ni soluciones.
+
+Cada alumno resuelve los ejercicios en su propio fork, dentro de `users/TU-USUARIO/`. El repositorio compartido solo contiene el currículo y las mejoras generales. Consulta [`exercises/README.md`](exercises/README.md).
 
 ## Estructura del repositorio
 
@@ -93,7 +93,7 @@ No necesitas Maven instalado: el repositorio incluye el Maven Wrapper (`mvnw`).
 5. Clona el repositorio y verifica el entorno:
 
 ```bash
-git clone https://github.com/OWNER/OpenDev.git
+git clone https://github.com/carlosgarcia-tech/open-dev.git
 cd OpenDev
 ./mvnw clean verify
 ```
@@ -102,14 +102,14 @@ cd OpenDev
 
 ## Comandos disponibles
 
-| Comando | Propósito |
-| --- | --- |
-| `./mvnw clean verify` | Compila, ejecuta tests, Checkstyle y Spotless |
-| `./mvnw test` | Ejecuta solo los tests |
-| `./mvnw checkstyle:check` | Ejecuta Checkstyle |
-| `./mvnw spotless:check` | Comprueba el formato Java |
-| `./mvnw spotless:apply` | Aplica el formato Java |
-| `./mvnw package` | Genera el JAR en `target/` |
+| Comando                   | Propósito                                     |
+| ------------------------- | --------------------------------------------- |
+| `./mvnw clean verify`     | Compila, ejecuta tests, Checkstyle y Spotless |
+| `./mvnw test`             | Ejecuta solo los tests                        |
+| `./mvnw checkstyle:check` | Ejecuta Checkstyle                            |
+| `./mvnw spotless:check`   | Comprueba el formato Java                     |
+| `./mvnw spotless:apply`   | Aplica el formato Java                        |
+| `./mvnw package`          | Genera el JAR en `target/`                    |
 
 En Windows, usa `.\mvnw.cmd` en lugar de `./mvnw`.
 

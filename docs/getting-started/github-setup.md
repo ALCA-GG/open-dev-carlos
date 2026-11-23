@@ -18,14 +18,14 @@ Si aún no tienes cuenta, regístrate en [github.com](https://github.com). Usa u
 2. Pulsa **Fork**.
 3. Elige tu cuenta como destino.
 
-Ahora tienes una copia en `https://github.com/USERNAME/OpenDev`.
+Ahora tienes una copia en `https://github.com/USERNAME/open-dev`.
 
 ## Clonar y configurar remotos
 
 ```bash
-git clone https://github.com/USERNAME/OpenDev.git
+git clone https://github.com/USERNAME/open-dev.git
 cd OpenDev
-git remote add upstream https://github.com/OWNER/OpenDev.git
+git remote add upstream https://github.com/carlosgarcia-tech/open-dev.git
 git remote -v
 ```
 

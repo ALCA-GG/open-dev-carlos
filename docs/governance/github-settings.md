@@ -50,7 +50,7 @@ Crea las etiquetas descritas en [`labels.md`](labels.md). GitHub no las crea a p
 
 ## CODEOWNERS
 
-Sustituye `@OWNER` en [`.github/CODEOWNERS`](../../.github/CODEOWNERS) por el usuario u organización real. GitHub solo reconoce el archivo si las cuentas tienen acceso de escritura.
+[`.github/CODEOWNERS`](../../.github/CODEOWNERS) asigna la propiedad a `@carlosgarcia-tech`. GitHub solo reconoce el archivo si esa cuenta tiene acceso de escritura.
 
 ## Temas del repositorio
 

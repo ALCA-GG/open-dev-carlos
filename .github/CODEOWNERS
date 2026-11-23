@@ -1,3 +1,2 @@
-# Sustituye @OWNER por el usuario u organización que mantiene el repositorio.
-# GitHub solo reconoce este archivo si los usuarios indicados tienen acceso de escritura.
-* @OWNER
+# Propietario del repositorio. GitHub solo reconoce este archivo si la cuenta tiene acceso de escritura.
+* @carlosgarcia-tech
