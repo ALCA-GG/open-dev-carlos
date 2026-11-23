@@ -10,8 +10,8 @@
     "prepare": "husky",
     "validate:commit": "node scripts/check-commit-message.js",
     "validate:structure": "node scripts/validate-structure.js",
-    "format:check": "prettier --check \"**/*.md\" \"*.json\"",
-    "format:write": "prettier --write \"**/*.md\" \"*.json\"",
+    "format:check": "prettier --check \"**/*.md\" \"*.json\" \".github/**/*.yml\"",
+    "format:write": "prettier --write \"**/*.md\" \"*.json\" \".github/**/*.yml\"",
     "validate": "npm run validate:structure && npm run format:check"
   },
   "devDependencies": {
