@@ -17,7 +17,7 @@ Construir una comunidad donde las personas principiantes desarrollen habilidades
 ## Objetivos
 
 - Enseñar Java desde cero, sin asumir experiencia previa.
-- Practicar con ejercicios y proyectos pequeños y verificables.
+- Practicar con ejercicios que se publicarán de forma progresiva.
 - Aprender Git, GitHub y el flujo de Pull Requests.
 - Fomentar el código limpio y las convenciones compartidas.
 - Ofrecer revisiones de código constructivas.
@@ -28,61 +28,57 @@ Construir una comunidad donde las personas principiantes desarrollen habilidades
 Cualquier persona interesada en aprender o enseñar programación. No se requiere experiencia profesional. Puedes participar como:
 
 - **Learner:** usas el material para aprender, aunque no contribuyas con código.
-- **Contributor:** abres issues, mejoras documentación, propones ejercicios o envías Pull Requests.
+- **Contributor:** abres issues, mejoras documentación o envías Pull Requests.
 - **Maintainer:** revisas contribuciones y ayudas a mantener el repositorio, cuando el Owner lo autorice.
 
 ## ¿Qué puedes aprender?
 
 - Fundamentos de Java y de la programación.
 - Tipos de datos, operadores, control de flujo, bucles y métodos.
-- Arrays, cadenas, programación orientada a objetos, excepciones y colecciones.
+- Arrays y cadenas.
 - Pruebas automatizadas con JUnit 5.
 - Git, GitHub, ramas, commits y Pull Requests.
 - Revisión de código y trabajo colaborativo.
 - Convenciones de estilo y buenas prácticas.
 
+Los temas más avanzados se incorporarán cuando el alumnado haya completado los fundamentos. No se publica material adelantado.
+
 ## Ruta de aprendizaje
 
-| Módulo | Tema                                    |
-| ------ | --------------------------------------- |
-| 00     | Introducción a la programación y a Java |
-| 01     | Fundamentos de Java                     |
-| 02     | Variables y tipos                       |
-| 03     | Operadores                              |
-| 04     | Control de flujo                        |
-| 05     | Bucles                                  |
-| 06     | Métodos                                 |
-| 07     | Arrays y cadenas                        |
-| 08     | Programación orientada a objetos        |
-| 09     | Excepciones                             |
-| 10     | Colecciones                             |
-| 11     | Proyectos básicos                       |
+| Módulo | Tema |
+| --- | --- |
+| 00 | Introducción a la programación y a Java |
+| 01 | Fundamentos de Java |
+| 02 | Variables, tipos y entrada/salida |
+| 03 | Operadores |
+| 04 | Control de flujo |
+| 05 | Bucles |
+| 06 | Métodos |
+| 07 | Arrays y cadenas |
 
 Consulta [`docs/learning-path/README.md`](docs/learning-path/README.md) para ver el orden recomendado y los objetivos de cada módulo.
+
+Los ejercicios se publicarán uno a uno, a medida que avance el alumnado. Esta versión inicial no incluye ejercicios ni soluciones.
 
 ## Estructura del repositorio
 
 ```text
 OpenDev/
 ├── .github/            Plantillas, workflows y configuración de GitHub
-├── .husky/             Git hooks locales
 ├── .mvn/               Configuración del Maven Wrapper
 ├── docs/               Guías, ruta de aprendizaje y gobernanza
-├── exercises/          Ejercicios organizados por nivel
-├── projects/           Proyectos prácticos por dificultad
+├── exercises/          Reservado para ejercicios progresivos
+├── projects/           Reservado para proyectos futuros
 ├── resources/          Libros, documentación y enlaces útiles
-├── scripts/            Validaciones de estructura y commits
-├── solutions/          Soluciones explicadas, separadas de los enunciados
 └── src/                Aplicación Java de ejemplo y sus tests
 ```
 
-Cada directorio incluye un README con su propósito. Los ejercicios viven en `exercises/`, las soluciones en `solutions/` y la aplicación Java en `src/`.
+Cada directorio incluye un README con su propósito. La aplicación Java vive en `src/`.
 
 ## Requisitos
 
 - Java 21 LTS.
 - Git.
-- Node.js LTS (incluido en `.nvmrc`).
 - Una cuenta de GitHub para contribuir.
 - Terminal básica.
 
@@ -94,28 +90,28 @@ No necesitas Maven instalado: el repositorio incluye el Maven Wrapper (`mvnw`).
 2. Configura Java con [`docs/getting-started/java-setup.md`](docs/getting-started/java-setup.md).
 3. Configura Git con [`docs/getting-started/git-setup.md`](docs/getting-started/git-setup.md).
 4. Configura GitHub con [`docs/getting-started/github-setup.md`](docs/getting-started/github-setup.md).
-5. Clona el repositorio y ejecuta:
+5. Clona el repositorio y verifica el entorno:
 
 ```bash
-npm install
+git clone https://github.com/OWNER/OpenDev.git
+cd OpenDev
 ./mvnw clean verify
 ```
 
-6. Empieza por [`docs/learning-path/00-introduction.md`](docs/learning-path/00-introduction.md) y resuelve el primer ejercicio en [`exercises/01-fundamentals/01-hello-world`](exercises/01-fundamentals/01-hello-world).
+6. Empieza por [`docs/learning-path/00-introduction.md`](docs/learning-path/00-introduction.md).
 
 ## Comandos disponibles
 
-| Comando                                  | Propósito                                     |
-| ---------------------------------------- | --------------------------------------------- |
-| `./mvnw clean verify`                    | Compila, ejecuta tests, Checkstyle y Spotless |
-| `./mvnw test`                            | Ejecuta solo los tests                        |
-| `./mvnw checkstyle:check`                | Ejecuta Checkstyle                            |
-| `./mvnw spotless:check`                  | Comprueba el formato Java                     |
-| `./mvnw spotless:apply`                  | Aplica el formato Java                        |
-| `npm run validate`                       | Valida estructura y formato de Markdown/JSON  |
-| `npm run validate:structure`             | Valida la estructura del repositorio          |
-| `npm run validate:commit -- "feat: ..."` | Valida un mensaje de commit                   |
-| `npm run format:write`                   | Formatea Markdown y JSON con Prettier         |
+| Comando | Propósito |
+| --- | --- |
+| `./mvnw clean verify` | Compila, ejecuta tests, Checkstyle y Spotless |
+| `./mvnw test` | Ejecuta solo los tests |
+| `./mvnw checkstyle:check` | Ejecuta Checkstyle |
+| `./mvnw spotless:check` | Comprueba el formato Java |
+| `./mvnw spotless:apply` | Aplica el formato Java |
+| `./mvnw package` | Genera el JAR en `target/` |
+
+En Windows, usa `.\mvnw.cmd` en lugar de `./mvnw`.
 
 ## Flujo de contribución
 
@@ -123,7 +119,7 @@ npm install
 2. Haz fork del repositorio y clona tu fork.
 3. Crea una rama desde `main` con el prefijo adecuado.
 4. Realiza el cambio y añade tests cuando corresponda.
-5. Ejecuta `npm run validate` y `./mvnw clean verify`.
+5. Ejecuta `./mvnw clean verify`.
 6. Haz commits con Conventional Commits.
 7. Abre un Pull Request y responde a la revisión.
 
@@ -145,7 +141,7 @@ No existe una rama `develop`.
 Formato: `<tipo>(<alcance>): <descripción>`
 
 ```text
-feat(exercises): add variable exercises
+docs(learning-path): add variables module
 fix(fundamentals): correct integer division example
 docs(installation): improve Java setup guide
 ```

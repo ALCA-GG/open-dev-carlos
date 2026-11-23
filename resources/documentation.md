@@ -7,7 +7,7 @@ La documentación oficial es la fuente más fiable. Estas referencias son útile
 - [Java SE Documentation](https://docs.oracle.com/en/java/javase/21/): documentación de Java 21.
 - [Java API Specification](https://docs.oracle.com/en/java/javase/21/docs/api/): referencia de clases y métodos.
 - [Dev.java](https://dev.java/): tutoriales oficiales.
-- [Java Language Specification](https://docs.oracle.com/javase/specs/): especificación del lenguaje (avanzado).
+- [Java Language Specification](https://docs.oracle.com/javase/specs/): especificación del lenguaje.
 
 ## Herramientas
 
@@ -16,8 +16,6 @@ La documentación oficial es la fuente más fiable. Estas referencias son útile
 - [JUnit 5 User Guide](https://junit.org/junit5/docs/current/user-guide/): guía de JUnit.
 - [Checkstyle](https://checkstyle.org/): reglas y configuración.
 - [Spotless](https://github.com/diffplug/spotless): formateo de código.
-- [Prettier](https://prettier.io/docs/): formateo de Markdown y JSON.
-- [Husky](https://typicode.github.io/husky/): Git hooks.
 
 ## Git y GitHub
 

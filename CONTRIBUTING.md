@@ -9,8 +9,9 @@ Necesitas:
 - Git instalado.
 - Una cuenta de GitHub.
 - Java 21 LTS.
-- Node.js LTS (la versión está en `.nvmrc`).
 - Ganas de aprender. No necesitas experiencia profesional.
+
+El proyecto usa únicamente Java, Maven Wrapper y Git.
 
 Si algo no funciona, consulta [`SUPPORT.md`](SUPPORT.md) antes de abrir un issue.
 
@@ -20,10 +21,12 @@ Puedes ayudar de muchas formas:
 
 - Corregir errores ortográficos o explicaciones confusas.
 - Mejorar la documentación o los ejemplos.
-- Crear ejercicios para principiantes.
 - Añadir o mejorar tests.
 - Revisar Pull Requests de otras personas.
 - Reportar errores con pasos claros para reproducirlos.
+- Proponer mejoras para la ruta de aprendizaje.
+
+Los ejercicios se incorporarán de forma progresiva y coordinada. No añadas ejercicios ni soluciones por tu cuenta sin hablarlo antes en un issue.
 
 No hace falta escribir código para contribuir.
 
@@ -51,14 +54,18 @@ git remote -v
 
 Sustituye `OWNER` por el propietario del repositorio original.
 
-### 4. Instala las herramientas
+### 4. Comprueba Java y Maven Wrapper
 
 ```bash
-npm install
+java -version
 ./mvnw --version
 ```
 
-`npm install` instala Husky y activa los hooks locales.
+En Windows:
+
+```powershell
+.\mvnw.cmd --version
+```
 
 ### 5. Crea una rama
 
@@ -67,20 +74,20 @@ Parte siempre de la última versión de `main`:
 ```bash
 git checkout main
 git pull upstream main
-git checkout -b feat/my-first-exercise
+git checkout -b feat/my-first-change
 ```
 
 Prefijos permitidos:
 
-| Tipo                            | Prefijo     | Ejemplo                       |
-| ------------------------------- | ----------- | ----------------------------- |
-| Nueva funcionalidad o ejercicio | `feat/`     | `feat/array-exercises`        |
-| Corrección                      | `fix/`      | `fix/incorrect-loop-example`  |
-| Documentación                   | `docs/`     | `docs/java-installation`      |
-| Refactorización                 | `refactor/` | `refactor/exercise-structure` |
-| Tests                           | `test/`     | `test/array-validation`       |
-| Mantenimiento                   | `chore/`    | `chore/update-maven`          |
-| Corrección urgente              | `hotfix/`   | `hotfix/critical-build-error` |
+| Tipo | Prefijo | Ejemplo |
+| --- | --- | --- |
+| Nueva funcionalidad | `feat/` | `feat/improve-docs` |
+| Corrección | `fix/` | `fix/incorrect-loop-example` |
+| Documentación | `docs/` | `docs/java-installation` |
+| Refactorización | `refactor/` | `refactor/exercise-structure` |
+| Tests | `test/` | `test/array-validation` |
+| Mantenimiento | `chore/` | `chore/update-maven` |
+| Corrección urgente | `hotfix/` | `hotfix/critical-build-error` |
 
 Usa minúsculas y kebab-case. Los nombres deben ser cortos y descriptivos.
 
@@ -92,21 +99,6 @@ Usa minúsculas y kebab-case. Los nombres deben ser cortos y descriptivos.
 - Explica los conceptos sin asumir conocimientos previos.
 - Usa ejemplos ejecutables.
 - Actualiza los enlaces internos si mueves archivos.
-
-### Ejercicios
-
-Cada ejercicio debe seguir la estructura descrita en [`exercises/README.md`](exercises/README.md):
-
-```text
-exercises/<categoria>/<numero-nombre>/
-├── README.md
-├── Main.java
-└── MainTest.java
-```
-
-El README debe incluir dificultad, objetivos, descripción, requisitos, salida esperada, pistas, criterios de aceptación y un reto adicional.
-
-No coloques la solución junto al enunciado. Si hace falta una solución, añádela en `solutions/` con una explicación.
 
 ### Código Java
 
@@ -122,15 +114,14 @@ No coloques la solución junto al enunciado. Si hace falta una solución, añád
 Ejecuta las mismas comprobaciones que CI:
 
 ```bash
-npm run validate
 ./mvnw clean verify
-./mvnw spotless:check
 ```
+
+Esto compila, ejecuta los tests, pasa Checkstyle y comprueba el formato con Spotless.
 
 Si el formato falla, puedes aplicar el formateador:
 
 ```bash
-npm run format:write
 ./mvnw spotless:apply
 ```
 
@@ -152,7 +143,7 @@ Usa Conventional Commits:
 Ejemplos:
 
 ```text
-feat(exercises): add variable exercises
+docs(learning-path): add variables module
 fix(fundamentals): correct integer division example
 docs(installation): improve Java setup guide
 test(arrays): add array boundary tests
@@ -166,20 +157,14 @@ Reglas:
 - Máximo 72 caracteres en la primera línea.
 - Un commit por unidad lógica de trabajo.
 
-El hook `commit-msg` valida el formato automáticamente. Puedes comprobarlo antes con:
-
-```bash
-npm run validate:commit -- "feat(exercises): add my first exercise"
-```
-
-Consulta [`docs/guides/commit-conventions.md`](docs/guides/commit-conventions.md) para más detalle.
+Consulta [`docs/guides/commit-conventions.md`](docs/guides/commit-conventions.md) para más detalle. El título del Pull Request se valida automáticamente en CI.
 
 ## Pull Request
 
 1. Sube tu rama:
 
 ```bash
-git push origin feat/my-first-exercise
+git push origin feat/my-first-change
 ```
 
 2. Abre un Pull Request contra `main`.
@@ -203,7 +188,7 @@ git push origin main
 Después, actualiza tu rama de trabajo:
 
 ```bash
-git checkout feat/my-first-exercise
+git checkout feat/my-first-change
 git merge main
 ```
 
@@ -213,32 +198,6 @@ Si hay conflictos, Git te indicará los archivos afectados. Edítalos, elimina l
 git add <archivos>
 git commit -m "chore: resolve merge conflicts with main"
 ```
-
-## Hooks de Git
-
-Husky instala tres hooks:
-
-| Hook         | Qué hace                                           |
-| ------------ | -------------------------------------------------- |
-| `pre-commit` | Valida la estructura y el formato de Markdown/JSON |
-| `commit-msg` | Valida Conventional Commits                        |
-| `pre-push`   | Ejecuta `./mvnw -B verify`                         |
-
-Si un hook falla, lee el mensaje, corrige el problema y vuelve a intentarlo. No uses `git push --no-verify` como solución habitual: CI ejecuta las mismas validaciones y el Pull Request fallará igualmente.
-
-En Windows, los hooks se ejecutan con Git Bash. Si el hook `pre-push` falla por el entorno, ejecuta manualmente:
-
-```powershell
-.\mvnw.cmd -B verify
-```
-
-Para desactivar los hooks temporalmente en una emergencia:
-
-```bash
-git commit --no-verify
-```
-
-Úsalo solo si sabes por qué falla el hook y cómo resolverlo después.
 
 ## Revisión de código
 

@@ -80,18 +80,6 @@ if (tienePermiso) {
 }
 ```
 
-## Ejercicios
-
-En [`exercises/02-control-flow`](../../exercises/02-control-flow/):
-
-- Clasifica una nota.
-- Comprueba si un año es bisiesto.
-- Calcula el mayor de tres números.
-
-## Reto
-
-Escribe un programa que reciba la hora del día (0–23) y muestre un saludo adecuado: buenos días, buenas tardes o buenas noches.
-
 ## Siguiente módulo
 
 [05 — Bucles](05-loops.md)

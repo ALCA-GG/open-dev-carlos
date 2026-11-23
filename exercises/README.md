@@ -1,48 +1,29 @@
 # Ejercicios
 
-Los ejercicios están organizados por tema y dificultad. Cada uno es independiente y se puede resolver sin herramientas externas.
+Los ejercicios se publicarán de forma progresiva, uno a uno, a medida que el alumnado avance por la ruta de aprendizaje. Esta versión inicial no incluye ejercicios ni soluciones.
 
-## Cómo resolver un ejercicio
+## Por qué no hay ejercicios todavía
 
-1. Lee el `README.md` del ejercicio.
-2. Abre `Main.java` y completa el código.
-3. Ejecuta `MainTest.java` desde tu editor o copia el ejercicio a un proyecto temporal.
-4. Compara la salida con la esperada.
-5. Intenta el reto adicional antes de mirar una solución.
+Publicar todos los ejercicios de golpe puede abrumar a quien empieza. La idea es acompañar cada módulo con la práctica adecuada en el momento adecuado.
 
-## Estructura de un ejercicio
+## Qué encontrarás aquí cuando se publiquen
 
-```text
-exercises/<categoria>/<numero-nombre>/
-├── README.md      Enunciado y criterios
-├── Main.java      Punto de partida
-└── MainTest.java  Tests de referencia
-```
+Cada ejercicio tendrá:
 
-## Categorías
+- Un enunciado claro y adaptado a principiantes.
+- El objetivo de aprendizaje.
+- Un ejemplo de entrada y salida.
+- Criterios de aceptación.
+- Tests cuando sea práctico.
+- Un reto opcional.
 
-| Categoría                             | Tema                                           |
-| ------------------------------------- | ---------------------------------------------- |
-| [`01-fundamentals`](01-fundamentals/) | Primeros programas, variables, tipos y entrada |
-| [`02-control-flow`](02-control-flow/) | Condicionales                                  |
-| [`03-loops`](03-loops/)               | Bucles                                         |
-| [`04-methods`](04-methods/)           | Métodos y parámetros                           |
-| [`05-arrays`](05-arrays/)             | Arrays y cadenas                               |
-| [`06-oop`](06-oop/)                   | Clases y objetos                               |
-| [`07-exceptions`](07-exceptions/)     | Excepciones                                    |
-| [`08-collections`](08-collections/)   | Listas, conjuntos y mapas                      |
+## Mientras tanto
 
-## Reglas
-
-- No añadas dependencias externas.
-- Mantén el código legible.
-- No incluyas la solución en el enunciado.
-- Si propones un ejercicio nuevo, sigue el formato y abre un issue.
-
-## Soluciones
-
-Las soluciones explicadas viven en [`solutions/`](../solutions/). Intenta resolver el ejercicio antes de consultarlas.
+- Lee la ruta de aprendizaje en [`docs/learning-path/`](../docs/learning-path/).
+- Copia y ejecuta los ejemplos de cada módulo.
+- Modifica los ejemplos y observa qué ocurre.
+- Practica con la aplicación de ejemplo en `src/`.
 
 ## Contribuir
 
-Consulta [`CONTRIBUTING.md`](../CONTRIBUTING.md) y la plantilla de propuesta de ejercicio en `.github/ISSUE_TEMPLATE/exercise_proposal.yml`.
+Si quieres proponer un ejercicio, abre un issue explicando el objetivo y espera confirmación antes de implementarlo. No añadas ejercicios ni soluciones por tu cuenta: el ritmo de publicación es parte del diseño educativo.

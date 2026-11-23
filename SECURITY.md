@@ -31,8 +31,7 @@ Incluye, si es posible:
 
 Este repositorio es educativo y no contiene servicios en producción ni datos de usuarios. Aun así, nos importan:
 
-- La seguridad de las dependencias.
-- Los scripts de validación.
+- La seguridad de las dependencias de Maven.
 - La configuración de GitHub Actions.
 - Cualquier riesgo de ejecución de código no confiable.
 
@@ -42,7 +41,6 @@ Este repositorio es educativo y no contiene servicios en producción ni datos de
 - No ejecutes código de Pull Requests de forks sin revisarlo.
 - No uses `pull_request_target` para ejecutar código no confiable.
 - Mantén las dependencias actualizadas y revisa los avisos de Dependabot.
-- Ejecuta `npm audit` y revisa las alertas de seguridad cuando actualices paquetes.
 
 ## Divulgación responsable
 

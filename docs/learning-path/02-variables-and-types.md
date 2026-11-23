@@ -88,18 +88,6 @@ Cierra el `Scanner` cuando termines si tu programa lo requiere, aunque en progra
 - Prefiere `int` para enteros y `double` para decimales.
 - No uses números mágicos: extrae constantes con nombre.
 
-## Ejercicios
-
-En [`exercises/01-fundamentals`](../../exercises/01-fundamentals/):
-
-- `02-variables`: intercambia dos valores.
-- `03-data-types`: calcula un promedio.
-- `04-basic-input`: saluda a una persona usando `Scanner`.
-
-## Reto
-
-Pide nombre, edad y ciudad, y muestra una frase completa. Comprueba qué ocurre si escribes texto donde se espera un número.
-
 ## Siguiente módulo
 
 [03 — Operadores](03-operators.md)

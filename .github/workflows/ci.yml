@@ -24,23 +24,11 @@ jobs:
           java-version: "21"
           cache: maven
 
-      - name: Configurar Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version-file: .nvmrc
-          cache: npm
-
       - name: Validar Maven Wrapper
         run: ./mvnw --version
 
       - name: Compilar, probar y verificar calidad
         run: ./mvnw -B clean verify
-
-      - name: Instalar herramientas de Node.js
-        run: npm ci
-
-      - name: Validar estructura y formato
-        run: npm run validate
 
       - name: Publicar informes de tests
         if: always()

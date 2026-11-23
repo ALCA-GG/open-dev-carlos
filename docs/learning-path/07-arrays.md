@@ -92,19 +92,6 @@ String[] partes = csv.split(",");
 String unido = String.join(" - ", partes);
 ```
 
-## Ejercicios
+## Fin de la ruta actual
 
-En [`exercises/05-arrays`](../../exercises/05-arrays/):
-
-- Calcula la media de un array de notas.
-- Encuentra el valor máximo y el mínimo.
-- Invierte un array.
-- Cuenta cuántas vocales tiene una cadena.
-
-## Reto
-
-Pide una frase, elimina los espacios sobrantes y muestra cuántas palabras contiene y cuál es la más larga.
-
-## Siguiente módulo
-
-[08 — Programación orientada a objetos](08-object-oriented-programming.md)
+Los siguientes módulos se publicarán cuando el alumnado haya completado esta etapa. No se adelanta material para evitar que se acumule contenido sin practicar.

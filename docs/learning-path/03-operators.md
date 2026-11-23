@@ -90,17 +90,6 @@ boolean iguales = a.equals(b);
 
 Ante la duda, usa paréntesis. Mejoran la lectura aunque no sean obligatorios.
 
-## Ejercicios
-
-- Calcula el promedio de tres notas.
-- Comprueba si un número es par usando `%`.
-- Convierte grados Celsius a Fahrenheit.
-- Comprueba si una persona puede votar (mayor o igual de 18 años).
-
-## Reto
-
-Escribe un programa que calcule el cambio de una compra. Recibe el precio y el dinero entregado, y muestra cuánto hay que devolver. Piensa en los decimales y en el redondeo.
-
 ## Siguiente módulo
 
 [04 — Control de flujo](04-control-flow.md)

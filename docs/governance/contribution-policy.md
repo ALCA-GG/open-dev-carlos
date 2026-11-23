@@ -4,9 +4,8 @@ Esta política complementa [`CONTRIBUTING.md`](../../CONTRIBUTING.md) y define q
 
 ## Qué se acepta
 
-- Correcciones de errores en documentación, ejercicios o configuración.
+- Correcciones de errores en documentación o configuración.
 - Mejoras de claridad para principiantes.
-- Ejercicios nuevos con objetivos de aprendizaje claros.
 - Tests que cubran comportamiento existente o nuevo.
 - Refactorizaciones pequeñas y justificadas.
 - Recursos externos de calidad.
@@ -15,9 +14,8 @@ Esta política complementa [`CONTRIBUTING.md`](../../CONTRIBUTING.md) y define q
 ## Qué no se acepta
 
 - Contenido copiado sin atribución o con licencia incompatible.
-- Soluciones colocadas junto al enunciado cuando arruinan el ejercicio.
 - Dependencias innecesarias o sin mantenimiento.
-- Frameworks, bases de datos o servicios externos para los ejercicios básicos.
+- Frameworks, bases de datos o servicios externos para el contenido básico.
 - Cambios de alcance amplio mezclados con correcciones pequeñas.
 - Código ofuscado, generado sin revisión o sin explicación.
 - Publicidad, spam o enlaces afiliados.
@@ -35,26 +33,18 @@ Todo Pull Request debe:
 - No incluir secretos ni datos personales.
 - No introducir dependencias sin justificación.
 
-## Ejercicios
+## Ejercicios y proyectos
 
-Un ejercicio debe:
+Los ejercicios y proyectos se publicarán de forma progresiva, uno a uno. No se aceptan ejercicios ni soluciones no coordinados con el Owner, porque el ritmo de publicación es parte del diseño educativo.
 
-- Tener un objetivo de aprendizaje.
-- Ser comprensible sin conocimientos no explicados.
+Cuando se abra una convocatoria, las propuestas deberán:
+
+- Tener un objetivo de aprendizaje claro.
+- Ser comprensibles sin conocimientos no explicados.
 - Incluir entrada y salida esperadas.
 - Incluir criterios de aceptación.
 - Tener tests cuando sea práctico.
 - Evitar dependencias innecesarias.
-
-## Soluciones
-
-Las soluciones:
-
-- Viven en `solutions/`, separadas del enunciado.
-- Explican el razonamiento.
-- Siguen las mismas convenciones.
-- Se revisan antes de integrarse.
-- No sustituyen el enunciado.
 
 ## Revisiones y merges
 

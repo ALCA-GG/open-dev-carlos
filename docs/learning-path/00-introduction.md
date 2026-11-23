@@ -76,12 +76,6 @@ java -cp target/classes org.opendev.Main
 
 O desde tu editor, ejecutando la clase `Main`.
 
-## Ejercicios
-
-- Ejecuta el programa anterior.
-- Cambia el mensaje por uno propio.
-- Provoca un error a propósito (por ejemplo, quita un punto y coma) y lee el mensaje del compilador.
-
 ## Recursos
 
 - [Documentación oficial de Java](https://docs.oracle.com/en/java/)

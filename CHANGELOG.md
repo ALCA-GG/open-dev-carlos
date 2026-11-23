@@ -8,19 +8,24 @@ El formato sigue [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/) y e
 
 ### Añadido
 
-- Estructura inicial de documentación, ejercicios, proyectos y recursos.
+- Estructura inicial de documentación, recursos y aplicación Java.
 - Aplicación Java de ejemplo y tests con JUnit 5.
 - Configuración de Maven, Checkstyle y Spotless.
-- Husky con hooks de estructura, commits y tests.
-- Workflows de CI, validación de Pull Requests y gestión de inactividad.
+- Workflows de CI, validación de títulos de Pull Request y gestión de inactividad.
 - Plantillas de issues y Pull Request.
 - Documentación de gobernanza y seguridad.
+
+### Pendiente
+
+- Ejercicios progresivos para el alumnado.
+- Soluciones explicadas.
+- Proyectos guiados.
+- Módulos avanzados, cuando el alumnado complete los fundamentos.
 
 ## [0.1.0] - 2026-11-22
 
 ### Añadido
 
 - Primera versión del scaffold del repositorio educativo OpenDev.
-- Ruta de aprendizaje inicial.
-- Ejercicios de fundamentos.
+- Ruta de aprendizaje inicial de fundamentos.
 - Guías de instalación, Git, GitHub y contribución.

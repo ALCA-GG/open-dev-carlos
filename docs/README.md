@@ -17,4 +17,4 @@ Este directorio reúne el material necesario para aprender y contribuir.
 4. [`getting-started/github-setup.md`](getting-started/github-setup.md)
 5. [`learning-path/00-introduction.md`](learning-path/00-introduction.md)
 
-Si ya tienes el entorno configurado, puedes ir directamente a [`learning-path/README.md`](learning-path/README.md) o a [`exercises/README.md`](../exercises/README.md).
+Si ya tienes el entorno configurado, puedes ir directamente a [`learning-path/README.md`](learning-path/README.md). Los ejercicios se publicarán progresivamente en [`exercises/`](../exercises/).

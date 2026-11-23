@@ -1,46 +1,26 @@
 # Proyectos
 
-Los proyectos integran varios conceptos y producen algo que puedes ejecutar y mostrar. Están organizados por dificultad.
+Los proyectos se incorporarán más adelante, cuando el alumnado haya trabajado los fundamentos. Esta versión inicial no incluye proyectos implementados.
 
-## Niveles
+## Por qué esperar
 
-| Nivel        | Directorio                       | Qué practicas                              |
-| ------------ | -------------------------------- | ------------------------------------------ |
-| Principiante | [`beginner/`](beginner/)         | Variables, condicionales, bucles y métodos |
-| Intermedio   | [`intermediate/`](intermediate/) | POO, colecciones, excepciones y tests      |
-| Avanzado     | [`advanced/`](advanced/)         | Diseño, persistencia y proyectos completos |
+Un proyecto requiere combinar varios conceptos. Publicarlo antes de tiempo genera frustración y fomenta copiar soluciones sin entenderlas.
 
-## Cómo plantear un proyecto
+## Qué encontrarás cuando se publiquen
 
-1. Lee el enunciado.
-2. Escribe los casos de uso.
-3. Diseña las clases y sus responsabilidades.
-4. Implementa la lógica principal.
-5. Añade tests.
-6. Mejora la interfaz por consola.
-7. Documenta cómo ejecutarlo.
+- Proyectos pequeños y guiados.
+- Objetivos claros y alcanzables.
+- Tests para la lógica principal.
+- Instrucciones para ejecutarlos.
+- Criterios de entrega y revisión.
 
-## Estructura recomendada
+## Mientras tanto
 
-```text
-projects/<nivel>/<nombre>/
-├── README.md
-└── src/
-    ├── main/java/org/opendev/projects/<nombre>/
-    └── test/java/org/opendev/projects/<nombre>/
-```
-
-Los proyectos no forman parte del build principal salvo que se integren en el `pom.xml`. Indica en el README cómo compilarlos y ejecutarlos.
-
-## Criterios de calidad
-
-- El README explica el objetivo y los comandos.
-- La lógica está separada de la entrada/salida.
-- Hay tests para las reglas principales.
-- No hay dependencias innecesarias.
-- Los errores se manejan con mensajes claros.
-- El código sigue el estilo del repositorio.
+- Completa los módulos de la ruta de aprendizaje.
+- Practica modificando los ejemplos.
+- Lee código Java sencillo y trata de explicarlo.
+- Cuando te sientas preparado, propón una idea en un issue.
 
 ## Contribuir
 
-Propón el proyecto en un issue antes de implementarlo. Consulta [`CONTRIBUTING.md`](../CONTRIBUTING.md) y [`docs/learning-path/11-basic-projects.md`](../docs/learning-path/11-basic-projects.md).
+No añadas proyectos por tu cuenta sin coordinarlo antes. Abre un issue con la propuesta, el nivel y los conceptos que practica.

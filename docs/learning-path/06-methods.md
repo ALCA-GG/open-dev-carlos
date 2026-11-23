@@ -96,18 +96,6 @@ public static double calcularPromedio(double primera, double segunda, double ter
 }
 ```
 
-## Ejercicios
-
-En [`exercises/04-methods`](../../exercises/04-methods/):
-
-- Crea un método que calcule el área de un rectángulo.
-- Crea un método que determine si un número es primo.
-- Crea un método que convierta minutos a horas y minutos.
-
-## Reto
-
-Divide un programa de calculadora en métodos pequeños: sumar, restar, multiplicar y dividir. Cada método debe tener una responsabilidad clara.
-
 ## Siguiente módulo
 
 [07 — Arrays y cadenas](07-arrays.md)

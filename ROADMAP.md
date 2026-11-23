@@ -8,30 +8,28 @@ OpenDev avanza por fases. El orden importa: no se añade contenido avanzado hast
 - [x] Estándares de contribución.
 - [x] Guía de instalación de Java.
 - [x] Guía de Git y GitHub.
-- [x] Primeros ejercicios.
 
 ## Fase 2 — Fundamentos
 
+- [x] Introducción a Java.
 - [x] Variables y tipos.
 - [x] Operadores.
 - [x] Control de flujo.
 - [x] Bucles.
 - [x] Métodos.
-- [ ] Ampliar ejercicios de cada tema.
-- [ ] Añadir soluciones explicadas.
+- [x] Arrays y cadenas.
+- [ ] Ejercicios progresivos de cada tema.
+- [ ] Soluciones explicadas.
 
 ## Fase 3 — Java intermedio
 
-- [x] Arrays y cadenas.
-- [x] Programación orientada a objetos.
-- [x] Excepciones.
-- [x] Colecciones.
+- [ ] Programación orientada a objetos.
+- [ ] Excepciones.
+- [ ] Colecciones.
 - [ ] Ejercicios integradores por módulo.
-- [ ] Retos opcionales.
 
 ## Fase 4 — Desarrollo práctico
 
-- [x] Estructura de proyectos.
 - [x] Tests con JUnit 5.
 - [x] Guía de revisión de código.
 - [ ] Proyectos guiados de dificultad creciente.

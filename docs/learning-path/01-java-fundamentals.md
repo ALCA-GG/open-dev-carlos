@@ -84,18 +84,6 @@ java -cp target/classes org.opendev.Main
 
 Leer el error del compilador es una habilidad. Empieza por la primera línea del error.
 
-## Ejercicios
-
-En [`exercises/01-fundamentals/01-hello-world`](../../exercises/01-fundamentals/01-hello-world/):
-
-- Crea un programa que muestre un saludo.
-- Añade una segunda línea con tu nombre.
-- Ejecuta los tests.
-
-## Reto
-
-Escribe un programa que imprima un pequeño dibujo ASCII usando varias llamadas a `println`.
-
 ## Siguiente módulo
 
 [02 — Variables y tipos](02-variables-and-types.md)

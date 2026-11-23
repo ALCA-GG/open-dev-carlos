@@ -10,7 +10,6 @@ Closes #
 
 ## Tipo de contribución
 
-- [ ] Nuevo ejercicio
 - [ ] Corrección de error
 - [ ] Documentación
 - [ ] Tests
@@ -27,7 +26,6 @@ Closes #
 - [ ] Los tests pasan en local (`./mvnw clean verify`).
 - [ ] La compilación de Maven finaliza correctamente.
 - [ ] Las comprobaciones de formato pasan (`./mvnw spotless:check`).
-- [ ] La validación del repositorio pasa (`npm run validate`).
 - [ ] Revisé la documentación afectada.
 
 ## Objetivos de aprendizaje

@@ -21,7 +21,7 @@ Se consideran importantes:
 - Cambiar la estructura del repositorio.
 - Añadir una dependencia o herramienta.
 - Modificar la gobernanza o las reglas de contribución.
-- Cambiar la versión mínima de Java o Node.js.
+- Cambiar la versión mínima de Java.
 - Alterar el flujo de ramas o de releases.
 
 Para estas decisiones:

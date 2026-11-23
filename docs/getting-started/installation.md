@@ -4,13 +4,11 @@ Esta guía prepara tu equipo para trabajar con OpenDev. Si es la primera vez que
 
 ## 1. Requisitos
 
-| Herramienta                | Versión              | Obligatoria                   |
-| -------------------------- | -------------------- | ----------------------------- |
-| Java Development Kit (JDK) | 21 LTS               | Sí                            |
-| Git                        | Reciente             | Sí                            |
-| Node.js                    | LTS (ver `.nvmrc`)   | Sí, para hooks y validaciones |
-| npm                        | Incluido con Node.js | Sí                            |
-| Cuenta de GitHub           | —                    | Para contribuir               |
+| Herramienta | Versión | Obligatoria |
+| --- | --- | --- |
+| Java Development Kit (JDK) | 21 LTS | Sí |
+| Git | Reciente | Sí |
+| Cuenta de GitHub | — | Para contribuir |
 
 No necesitas instalar Maven: el repositorio incluye el Maven Wrapper (`mvnw`).
 
@@ -33,23 +31,7 @@ Sigue [`git-setup.md`](git-setup.md). Comprueba:
 git --version
 ```
 
-## 4. Instalar Node.js
-
-Descarga la versión LTS desde [nodejs.org](https://nodejs.org/) o usa un gestor de versiones:
-
-```bash
-# Con nvm (Linux/macOS)
-nvm install --lts
-nvm use --lts
-
-# Comprobar
-node --version
-npm --version
-```
-
-La versión recomendada está en `.nvmrc`. Si usas `nvm`, puedes ejecutar `nvm use` dentro del repositorio.
-
-## 5. Clonar el repositorio
+## 4. Clonar el repositorio
 
 ```bash
 git clone https://github.com/OWNER/OpenDev.git
@@ -58,19 +40,16 @@ cd OpenDev
 
 Si vas a contribuir, clona tu fork y configura `upstream`. Consulta [`CONTRIBUTING.md`](../../CONTRIBUTING.md).
 
-## 6. Instalar dependencias de desarrollo
-
-```bash
-npm install
-```
-
-Este comando instala Husky y Prettier, y activa los hooks de Git.
-
-## 7. Verificar el entorno
+## 5. Verificar el entorno
 
 ```bash
 ./mvnw clean verify
-npm run validate
+```
+
+En Windows:
+
+```powershell
+.\mvnw.cmd clean verify
 ```
 
 Resultado esperado:
@@ -78,9 +57,10 @@ Resultado esperado:
 - Maven compila el proyecto.
 - Los tests pasan.
 - Checkstyle y Spotless no encuentran problemas.
-- La estructura y el formato del repositorio son válidos.
 
-## 8. Ejecutar la aplicación
+La primera ejecución descarga Maven y las dependencias; necesita conexión a internet.
+
+## 6. Ejecutar la aplicación
 
 ```bash
 ./mvnw package
@@ -105,22 +85,13 @@ Java no está instalado o no está en el `PATH`. Revisa [`java-setup.md`](java-s
 chmod +x mvnw
 ```
 
-### `npm install` falla por la versión de Node.js
-
-Comprueba `node --version`. Debe cumplir la versión indicada en `.nvmrc` y en `package.json`.
-
-### Los hooks no se ejecutan
-
-```bash
-npm run prepare
-git config core.hooksPath
-```
-
-Debe mostrar `.husky/_`.
-
 ### El build falla al descargar dependencias
 
 Comprueba tu conexión a internet y que puedas acceder a Maven Central. Si estás detrás de un proxy, configura Maven según la documentación de tu entorno.
+
+### El build falla por la versión de Java
+
+Ejecuta `java -version`. Debe ser Java 21. Si tienes varias versiones instaladas, revisa `JAVA_HOME` y el `PATH`.
 
 ## Siguiente paso
 

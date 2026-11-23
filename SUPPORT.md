@@ -6,8 +6,8 @@ OpenDev es un proyecto educativo mantenido por voluntarios. No hay un servicio d
 
 1. Lee la documentación de [`docs/`](docs/).
 2. Revisa los issues abiertos y cerrados.
-3. Comprueba que usas Java 21 y la versión de Node.js indicada en `.nvmrc`.
-4. Ejecuta `./mvnw clean verify` y `npm run validate` para descartar problemas de configuración.
+3. Comprueba que usas Java 21.
+4. Ejecuta `./mvnw clean verify` para descartar problemas de configuración.
 
 ## Dónde pedir ayuda
 
@@ -26,7 +26,7 @@ OpenDev es un proyecto educativo mantenido por voluntarios. No hay un servicio d
 - Qué esperabas que ocurriera.
 - Qué ocurrió realmente.
 - Mensajes de error completos.
-- Versión de Java (`java -version`), sistema operativo y versión de Node.js (`node --version`).
+- Versión de Java (`java -version`) y sistema operativo.
 
 ## Lo que no ofrecemos
 

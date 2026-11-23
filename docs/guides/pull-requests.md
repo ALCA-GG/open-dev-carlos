@@ -6,7 +6,6 @@ Un Pull Request (PR) propone integrar cambios de una rama en `main`. Es también
 
 - [ ] La rama parte de `main` actualizado.
 - [ ] El cambio resuelve un issue o está justificado.
-- [ ] `npm run validate` pasa.
 - [ ] `./mvnw clean verify` pasa.
 - [ ] Añadiste tests si cambiaste lógica.
 - [ ] Actualizaste la documentación afectada.
@@ -17,7 +16,7 @@ Un Pull Request (PR) propone integrar cambios de una rama en `main`. Es también
 Usa Conventional Commits:
 
 ```text
-feat(exercises): add calculator exercise
+feat(docs): add a new guide
 docs(installation): clarify Java setup
 fix(loops): correct off-by-one example
 ```

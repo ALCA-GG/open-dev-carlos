@@ -72,7 +72,6 @@ Evita abreviaturas crípticas y nombres genéricos.
 - Enlaces relativos para archivos del repositorio.
 - Bloques de código con lenguaje.
 - Líneas razonablemente cortas.
-- Prettier comprueba el formato.
 
 ## YAML y JSON
 
@@ -87,14 +86,12 @@ Consulta [`commit-conventions.md`](commit-conventions.md).
 
 ## Herramientas
 
-| Herramienta | Comando                                   |
-| ----------- | ----------------------------------------- |
-| Spotless    | `./mvnw spotless:check`                   |
-| Checkstyle  | `./mvnw checkstyle:check`                 |
-| Tests       | `./mvnw test`                             |
-| Estructura  | `npm run validate:structure`              |
-| Prettier    | `npm run format:check`                    |
-| Todo        | `npm run validate && ./mvnw clean verify` |
+| Herramienta | Comando                   |
+| ----------- | ------------------------- |
+| Spotless    | `./mvnw spotless:check`   |
+| Checkstyle  | `./mvnw checkstyle:check` |
+| Tests       | `./mvnw test`             |
+| Todo        | `./mvnw clean verify`     |
 
 ## Principio
 

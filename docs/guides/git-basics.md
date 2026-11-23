@@ -92,7 +92,7 @@ Un conflicto ocurre cuando dos ramas cambian la misma parte de un archivo.
 
 - Haz commits pequeños y con propósito.
 - Revisa `git status` antes de commitear.
-- No subas secretos, `node_modules` ni `target/`.
+- No subas secretos, `target/` ni archivos generados.
 - No reescribas el historial de ramas compartidas.
 - Mantén tu rama actualizada con `main`.
 

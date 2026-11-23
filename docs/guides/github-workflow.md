@@ -50,7 +50,6 @@ git switch -c feat/nombre-descriptivo
 ## 3. Trabaja y verifica
 
 ```bash
-npm run validate
 ./mvnw clean verify
 ```
 

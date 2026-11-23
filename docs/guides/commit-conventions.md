@@ -12,14 +12,14 @@ El alcance es opcional:
 
 ```text
 docs: fix broken link
-feat(exercises): add array exercises
+docs(learning-path): add arrays module
 ```
 
 ## Tipos
 
 | Tipo       | Uso                                         |
 | ---------- | ------------------------------------------- |
-| `feat`     | Nueva funcionalidad o ejercicio             |
+| `feat`     | Nueva funcionalidad                         |
 | `fix`      | Corrección de un error                      |
 | `docs`     | Documentación                               |
 | `test`     | Tests                                       |
@@ -42,11 +42,11 @@ feat(exercises): add array exercises
 ## Ejemplos válidos
 
 ```text
-feat(exercises): add calculator exercise #42
+docs(learning-path): add methods module #42
 fix(fundamentals): correct integer division example
 docs(installation): improve Java setup guide
 test(arrays): add boundary tests
-refactor(exercises): simplify folder structure
+refactor(learning-path): simplify folder structure
 chore(dependencies): update JUnit version
 ci(workflows): cache Maven dependencies
 ```
@@ -77,23 +77,17 @@ feat: Add exercise.
 
 Usa un alcance solo si aclara el contexto. No es obligatorio.
 
-## Validación automática
+## Validación
 
-El hook `commit-msg` ejecuta `scripts/check-commit-message.js`. También puedes validar manualmente:
+El título del Pull Request se valida automáticamente en CI. Los mensajes de commit se revisan durante la revisión del Pull Request.
 
-```bash
-npm run validate:commit -- "feat(exercises): add my first exercise"
-```
+Antes de commitear, comprueba manualmente:
 
-El script comprueba:
-
-- Tipo permitido.
-- Formato `tipo(alcance): descripción`.
-- Longitud máxima.
-- Inicio en minúscula.
-- Ausencia de punto final.
-
-Los commits de merge (`Merge ...`) se permiten para no romper el flujo de Git.
+- Que el tipo está permitido.
+- Que el formato es `tipo(alcance): descripción`.
+- Que la primera línea no supera 72 caracteres.
+- Que la descripción empieza en minúscula.
+- Que no termina en punto.
 
 ## Cuerpo del commit
 
@@ -113,7 +107,7 @@ Separa la cabecera del cuerpo con una línea en blanco.
 Puedes incluir `#N` al final de la cabecera o en el cuerpo:
 
 ```text
-feat(exercises): add array exercises #42
+docs(learning-path): add arrays module #42
 ```
 
 No es obligatorio, pero ayuda a rastrear el contexto.

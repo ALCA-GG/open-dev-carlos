@@ -84,18 +84,6 @@ for (int fila = 1; fila <= 3; fila++) {
 - Recorrer arrays fuera de sus límites.
 - Usar `<=` con la longitud de un array cuando debería ser `<`.
 
-## Ejercicios
-
-En [`exercises/03-loops`](../../exercises/03-loops/):
-
-- Suma los números del 1 al 100.
-- Muestra la tabla de multiplicar de un número.
-- Cuenta cuántos números pares hay en un rango.
-
-## Reto
-
-Escribe un programa que adivine un número secreto. Debe pedir intentos hasta acertar y decir si el número es mayor o menor.
-
 ## Siguiente módulo
 
 [06 — Métodos](06-methods.md)

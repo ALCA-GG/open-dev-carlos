@@ -41,7 +41,6 @@ Marca como obligatorios los jobs de:
 
 - `CI / Compilación, tests y calidad`.
 - `Validación de Pull Request / Título convencional`.
-- `Validación de Pull Request / Estructura y formato`.
 
 Los nombres exactos aparecen en la pestaña **Actions** después de la primera ejecución.
 
