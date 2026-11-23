@@ -77,7 +77,7 @@ Sustituye `<identificador-de-java-25>` por la línea de Temurin 25 que muestre `
 
 Algunas herramientas, incluido el Maven Wrapper, necesitan saber dónde está el JDK.
 
-### Linux/macOS
+### Linux
 
 Averigua la ruta:
 
@@ -85,23 +85,32 @@ Averigua la ruta:
 readlink -f "$(which java)"
 ```
 
-Añade a `~/.bashrc`, `~/.zshrc` o el archivo de configuración de tu shell:
+Añade a `~/.bashrc` o al archivo de configuración de tu shell:
 
 ```bash
 export JAVA_HOME="/ruta/al/jdk-25"
 export PATH="$JAVA_HOME/bin:$PATH"
 ```
 
-En macOS puedes obtener la ruta directamente:
+Recarga la configuración:
+
+```bash
+source ~/.bashrc
+```
+
+### macOS
+
+Añade a `~/.zshrc`:
 
 ```bash
 export JAVA_HOME=$(/usr/libexec/java_home -v 25)
+export PATH="$JAVA_HOME/bin:$PATH"
 ```
 
 Recarga la configuración:
 
 ```bash
-source ~/.bashrc   # o source ~/.zshrc
+source ~/.zshrc
 ```
 
 ### Windows (PowerShell)
